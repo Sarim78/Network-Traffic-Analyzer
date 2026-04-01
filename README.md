@@ -10,7 +10,7 @@ Built as a hands-on introduction to network security fundamentals, covering pack
 
 ## Overview
 
-This tool runs on your own laptop and watches packets going in and out of your machine. It logs connection details like source/destination IPs, ports, and protocols, then checks if anything looks suspicious — for example, if one IP is hitting too many ports too quickly (a port scan).
+This tool runs on your own laptop and watches packets going in and out of your machine. It logs connection details like source/destination IPs, ports, and protocols, then checks if anything looks suspicious, for example, if one IP is hitting too many ports too quickly (a port scan).
 
 It does **not** monitor other devices on a network. It is a local, single-machine tool intended for learning purposes.
 
