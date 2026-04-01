@@ -1,28 +1,28 @@
 # Network Traffic Analyzer
 
-> ⚠️ **This project is currently under active development and is not yet complete.** Core functionality is being built out incrementally. See the [Status](#status) section for details.
+> **This project is currently under active development and is not yet complete.** Core functionality is being built out incrementally. See the [Status](#status) section for details.
 
-A Python-based network monitoring tool that captures live packet traffic, stores connection data, and flags suspicious activity using threshold-based detection rules.
+A beginner-level Python tool that monitors your **local machine's** network traffic in real time, stores connection data, and flags basic suspicious activity using simple threshold rules.
 
-Built as a hands-on exploration of network security fundamentals, covering packet inspection, anomaly detection, and local data persistence.
+Built as a hands-on introduction to network security fundamentals, covering packet inspection, anomaly detection, and local data persistence.
 
 ---
 
 ## Overview
 
-Most network threats leave traces in traffic patterns before they cause damage. This tool sits at the network layer, watches packets in real time, and surfaces anomalies like port scans and abnormally high connection rates from a single source.
+This tool runs on your own laptop and watches packets going in and out of your machine. It logs connection details like source/destination IPs, ports, and protocols, then checks if anything looks suspicious — for example, if one IP is hitting too many ports too quickly (a port scan).
 
-It is designed to be lightweight, dependency-minimal, and easy to run locally without any external services.
+It does **not** monitor other devices on a network. It is a local, single-machine tool intended for learning purposes.
 
 ---
 
 ## Features
 
-- **Live packet capture** --> sniffs real-time network traffic using Scapy
+- **Live packet capture** --> sniffs real-time traffic on your local machine using Scapy
 - **Metadata extraction** --> pulls source/destination IPs, ports, and protocols from each packet
 - **Local storage** --> persists captured data to a SQLite database
-- **Threat detection** --> applies configurable threshold rules to flag suspicious activity
-- **Event reporting** --> outputs a readable summary of flagged connections
+- **Basic threat detection** --> flags port scans and unusually high connection requests from a single IP
+- **Event reporting** --> outputs a readable summary of flagged activity to the console
 
 ---
 
@@ -106,3 +106,5 @@ python main.py
 - [ ] Console report of flagged events
 - [ ] Config file for adjustable thresholds
 - [ ] Optional: export report to `.txt` or `.csv`
+
+---
