@@ -89,9 +89,9 @@ python main.py
 | Module | Status |
 |---|---|
 | `.gitignore` | ✅ Complete |
-| `database.py` | 🔧 In progress |
+| `database.py` | ✅ Complete |
 | `capture.py` | 🔧 In progress |
-| `analyzer.py` | 🔧 In progress |
+| `analyzer.py` | ✅ Complete |
 | `reporter.py` | 🔧 In progress |
 | `main.py` | 🔧 In progress |
 
