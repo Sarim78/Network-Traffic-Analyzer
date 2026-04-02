@@ -90,9 +90,9 @@ python main.py
 |---|---|
 | `.gitignore` | ✅ Complete |
 | `database.py` | ✅ Complete |
-| `capture.py` | 🔧 In progress |
+| `capture.py` | ✅ Complete |
 | `analyzer.py` | ✅ Complete |
-| `reporter.py` | 🔧 In progress |
+| `reporter.py` | ✅ Complete |
 | `main.py` | 🔧 In progress |
 
 ---
