@@ -1,7 +1,5 @@
 # Network Traffic Analyzer
 
-> **This project is currently under active development and is not yet complete.** Core functionality is being built out incrementally. See the [Status](#status) section for details.
-
 A beginner-level Python tool that monitors your **local machine's** network traffic in real time, stores connection data, and flags basic suspicious activity using simple threshold rules.
 
 Built as a hands-on introduction to network security fundamentals, covering packet inspection, anomaly detection, and local data persistence.
@@ -63,8 +61,13 @@ network-traffic-analyzer/
 - Python 3.8+
 - pip
 - Admin/root access (required for raw packet capture)
+- **Npcap** (Windows only) — [https://npcap.com/#download](https://npcap.com/#download)
+  - Required on Windows for Scapy to capture raw packets
+  - Made by the Nmap project, a trusted open-source security organization
+  - Mac/Linux users can skip this; packet capture is built in
 
-### Installation
+```
+Installation
 
 ```bash
 git clone https://github.com/Sarim78/network-traffic-analyzer
@@ -81,30 +84,5 @@ sudo python main.py
 # Windows (run terminal as Administrator)
 python main.py
 ```
-
----
-
-## Status
-
-| Module | Status |
-|---|---|
-| `.gitignore` | ✅ Complete |
-| `database.py` | ✅ Complete |
-| `capture.py` | ✅ Complete |
-| `analyzer.py` | ✅ Complete |
-| `reporter.py` | ✅ Complete |
-| `main.py` | 🔧 In progress |
-
----
-
-## Roadmap
-
-- [ ] SQLite schema and packet storage
-- [ ] Live packet capture with Scapy
-- [ ] Port scan detection (threshold-based)
-- [ ] High connection rate flagging
-- [ ] Console report of flagged events
-- [ ] Config file for adjustable thresholds
-- [ ] Optional: export report to `.txt` or `.csv`
 
 ---
