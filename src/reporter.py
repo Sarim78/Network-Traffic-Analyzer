@@ -19,7 +19,7 @@ def print_report():
             src_ip = flag[2]
             reason = flag[3]
 
-            print(f"  [{id}] {timestamp}")
+            print(f"[{id}] {timestamp}")
             print(f"IP: {src_ip}")
             print(f"Reason: {reason}")
             print()
