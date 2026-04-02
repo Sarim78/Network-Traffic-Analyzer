@@ -55,28 +55,36 @@ network-traffic-analyzer/
 ---
 
 ## Getting Started
+## Disclaimer
 
+This tool only monitors traffic on your **own machine**. It does not intercept other devices, access external networks, or perform any unauthorized activity. It is intended strictly for educational purposes on your own local machine.
+
+---
 ### Prerequisites
 
-- Python 3.8+
-- pip
-- Admin/root access (required for raw packet capture)
-- **Npcap** (Windows only) — [https://npcap.com/#download](https://npcap.com/#download)
-  - Required on Windows for Scapy to capture raw packets
-  - Made by the Nmap project, a trusted open-source security organization
-  - Mac/Linux users can skip this; packet capture is built in
+Before running this project, make sure you have the following installed:
 
-```
-Installation
+| Requirement | Notes |
+|---|---|
+| Python 3.8+ | [python.org](https://python.org) |
+| pip | Comes with Python |
+| Admin/root access | Required for raw packet capture |
+| Npcap *(Windows only)* | [npcap.com/#download](https://npcap.com/#download) --> required on Windows for Scapy to capture packets. Made by the Nmap project, a trusted open-source security organization. Mac/Linux users can skip this. |
 
+### Installation
+
+**1. Clone the repo**
 ```bash
 git clone https://github.com/Sarim78/network-traffic-analyzer
 cd network-traffic-analyzer
+```
+
+**2. Install dependencies**
+```bash
 pip install -r requirements.txt
 ```
 
-### Running
-
+**3. Run the program**
 ```bash
 # macOS / Linux
 sudo python main.py
@@ -85,4 +93,10 @@ sudo python main.py
 python main.py
 ```
 
----
+**4. Stop capturing**
+
+Press `Ctrl+C` to stop. The report will print automatically.
+```
+
+Commit message:
+```
