@@ -100,3 +100,6 @@ Press `Ctrl+C` to stop. The report will print automatically.
 
 Commit message:
 ```
+## License
+ 
+MIT
